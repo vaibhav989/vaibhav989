@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void bubble_sort(int arr[],int n){
+    for(int times=1;times<n-1;times++){
+        for(int j=0;j<=n-times-1;j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+}
+int main(){
+    int a[]={10,20,30,40,50};
+    int n=sizeof(a)/sizeof(int);
+
+    bubble_sort(a,n);
+    for(auto x: a){
+        cout<<x<<",";
+    }
+    return 0;
+}
