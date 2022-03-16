@@ -1,3 +1,6 @@
+//ALL STL CONTAINER ARE PASSED BY VALUE
+
+
 // update the value of array by refrance 
 
 #include <iostream>
@@ -21,3 +24,8 @@ int main(){
 		cout<<arr[i]<<endl;
 	}
 }
+// for each loop (very important loop)
+// for(int x : arr){
+// cout<<x<<endl;
+
+// ITERATING OVER THE ARRAY .
