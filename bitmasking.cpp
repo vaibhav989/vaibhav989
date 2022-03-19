@@ -11,10 +11,20 @@ return (n & mask)>0 ? 1 :0;
 // is result is greater than 0 return 1 otherwise 0 
 }
 
+void ClearIthBit(int &n , int i){
+	int masks=~(1<<i);
+	n=n& masks;
+
+}
 int main(){
- int n=5;
+ int n=13;
  int i;
  cin>>i;
 
- cout<<masking(n,i)<<endl;
+ //cout<<masking(n,i)<<endl;
+ ClearIthBit(n,i);
+
+ cout<<n<<endl;
+
+ cout<<"Enjoy The Hustle !"<<endl;
 }
